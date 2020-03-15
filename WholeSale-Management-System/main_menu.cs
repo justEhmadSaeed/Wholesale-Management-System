@@ -29,19 +29,19 @@ namespace WholeSale_Management_System
         private void logout_button_Click(object sender, EventArgs e)
         {
             new login().Show();
-            this.Hide();
+            this.Close();
         }
 
         private void product_button_Click(object sender, EventArgs e)
         {
             new products_form().Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             new employees_form().Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

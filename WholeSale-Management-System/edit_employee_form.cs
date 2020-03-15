@@ -23,7 +23,7 @@ namespace WholeSale_Management_System
         private void back_button_Click_1(object sender, EventArgs e)
         {
             new employees_form().Show();
-            this.Hide();
+            this.Close();
         }
         private void populate_employee()
         {

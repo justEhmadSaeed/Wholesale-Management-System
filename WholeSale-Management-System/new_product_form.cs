@@ -22,7 +22,7 @@ namespace WholeSale_Management_System
         private void back_button_Click(object sender, EventArgs e)
         {
             new products_form().Show();
-            this.Hide();
+            this.Close();
         }
 
         private void addproduct_into_database()

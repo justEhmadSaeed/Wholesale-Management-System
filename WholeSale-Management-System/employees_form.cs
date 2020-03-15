@@ -23,19 +23,19 @@ namespace WholeSale_Management_System
         private void new_button_Click(object sender, EventArgs e)
         {
             new add_employee_form().Show();
-            this.Hide();
+            this.Close();
         }
 
         private void back_button_Click(object sender, EventArgs e)
         {
             new main_menu().Show();
-            this.Hide();
+            this.Close();
         }
 
         private void edit_button_Click(object sender, EventArgs e)
         {
             new edit_employee_form().Show();
-            this.Hide();
+            this.Close();
         }
         private void populate_employee()
         {
