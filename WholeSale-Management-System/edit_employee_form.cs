@@ -13,16 +13,22 @@ namespace WholeSale_Management_System
 {
     public partial class edit_employee_form : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=HAIER-PC;Initial Catalog=wholesale_MS;Integrated Security=True");
+        SqlConnection con;
 
         public edit_employee_form()
         {
             InitializeComponent();
             populate_employee();
         }
+        public edit_employee_form(SqlConnection conArg)
+        {
+            InitializeComponent();
+            con = conArg;
+            populate_employee();
+        }
         private void back_button_Click_1(object sender, EventArgs e)
         {
-            new employees_form().Show();
+            new employees_form(con).Show();
             this.Close();
         }
         private void populate_employee()

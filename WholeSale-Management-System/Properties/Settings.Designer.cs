@@ -32,5 +32,15 @@ namespace WholeSale_Management_System.Properties {
                 return ((string)(this["wholesale_MSConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=EHMAD-PC;Initial Catalog=wholesale_MS;Integrated Security=True")]
+        public string wholesale_MSConnectionString1 {
+            get {
+                return ((string)(this["wholesale_MSConnectionString1"]));
+            }
+        }
     }
 }

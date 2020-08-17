@@ -13,15 +13,19 @@ namespace WholeSale_Management_System
 {
     public partial class new_product_form : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=HAIER-PC;Initial Catalog=wholesale_MS;Integrated Security=True");
+        SqlConnection con;
         public new_product_form()
         {
             InitializeComponent();
         }
-
+        public new_product_form(SqlConnection conArg)
+        {
+            con = conArg;
+            InitializeComponent();
+        }
         private void back_button_Click(object sender, EventArgs e)
         {
-            new products_form().Show();
+            new products_form(con).Show();
             this.Close();
         }
 

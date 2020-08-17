@@ -77,6 +77,7 @@
     <Compile Include="employees_form.Designer.cs">
       <DependentUpon>employees_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,8 +199,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
-if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+    <PreBuildEvent>if exist "$("E:\Repos\Wholesale-Management-System\WholeSale-Management-System\bin\Debug\WholeSale-Management-System.exe").locked" del "$("E:\Repos\Wholesale-Management-System\WholeSale-Management-System\bin\Debug\WholeSale-Management-System.exe").locked" 
+if exist "$("E:\Repos\Wholesale-Management-System\WholeSale-Management-System\bin\Debug\WholeSale-Management-System.exe")" if not exist "$("E:\Repos\Wholesale-Management-System\WholeSale-Management-System\bin\Debug\WholeSale-Management-System.exe").locked" move "$("E:\Repos\Wholesale-Management-System\WholeSale-Management-System\bin\Debug\WholeSale-Management-System.exe")" "$("E:\Repos\Wholesale-Management-System\WholeSale-Management-System\bin\Debug\WholeSale-Management-System.exe").locked"</PreBuildEvent>
   </PropertyGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

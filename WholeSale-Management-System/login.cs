@@ -1,23 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WholeSale_Management_System
 {
     public partial class login : Form
     {
-
-        SqlConnection con = new SqlConnection("Data Source=HAIER-PC;Initial Catalog=wholesale_MS;Integrated Security=True");
+        SqlConnection con;
         public login()
         {
             InitializeComponent();
+            con = new SqlConnection("Data Source=EHMAD-PC;Initial Catalog=wholesale_MS;Integrated Security=True");
         }
 
         private void userID_box_KeyUp(object sender, KeyEventArgs e)
@@ -61,22 +55,23 @@ namespace WholeSale_Management_System
             if (ds.Tables[0].Rows.Count > 0)
             {
                 eid = user;
-                edesignation = Convert.ToString(ds.Tables[0].Rows[0].ItemArray[8]);
+                edesignation = (ds.Tables[0].Rows[0].ItemArray[8]).ToString();
                 if (edesignation.ToLower() == "admin")
                 {
-                    new main_menu(eid).Show();
+                    new main_menu(eid, con).Show();
                     this.Hide();
                 }
                 else if (edesignation.ToLower() == "employee")
                 {
-                    new main_menu(eid).Show();
+                    new main_menu(eid, con).Show();
                     this.Hide();
                 }
 
             }
             else
             {
-                MessageBox.Show("Incorrect User ID or Password!");
+                string errorMsg = "Incorrect User ID or Password!";
+                MessageBox.Show(errorMsg);
             }
 
             con.Close();

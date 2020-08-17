@@ -14,17 +14,19 @@ namespace WholeSale_Management_System
     public partial class main_menu : Form
     {
         string empID;
-        SqlConnection con = new SqlConnection("Data Source=HAIER-PC;Initial Catalog=wholesale_MS;Integrated Security=True");
+        SqlConnection con;
 
         public main_menu()
         {
             InitializeComponent();
         }
-        public main_menu(string emp)
+        public main_menu(string emp, SqlConnection conArg)
         {
             InitializeComponent();
             empID = emp;
-            welcome_label.Text = "WELCOME "+  empID.ToUpper();
+            con = conArg;
+            if (empID != null)
+                welcome_label.Text = $"WELCOME {empID.ToUpperInvariant()}";
         }
         private void logout_button_Click(object sender, EventArgs e)
         {
@@ -34,13 +36,13 @@ namespace WholeSale_Management_System
 
         private void product_button_Click(object sender, EventArgs e)
         {
-            new products_form().Show();
+            new products_form(con).Show();
             this.Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            new employees_form().Show();
+            new employees_form(con).Show();
             this.Close();
         }
     }

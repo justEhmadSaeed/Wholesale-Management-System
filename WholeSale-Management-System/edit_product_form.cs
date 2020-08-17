@@ -21,9 +21,16 @@ namespace WholeSale_Management_System
             populateProduct();
         }
 
+        public edit_product_form(SqlConnection conArg)
+        {
+            con = conArg;
+            InitializeComponent();
+            populateProduct();
+        }
+
         private void back_button_Click_1(object sender, EventArgs e)
         {
-            new products_form().Show();
+            new products_form(con).Show();
             this.Close();
         }
         private void populateProduct()
