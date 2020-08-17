@@ -35,13 +35,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.employee_button = new System.Windows.Forms.Button();
             this.logout_button = new System.Windows.Forms.Button();
             this.footer = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.welcome_label = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.welcome_label = new System.Windows.Forms.Label();
             this.footer.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -136,19 +136,19 @@
             this.button5.Text = "Payments";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // employee_button
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button6.Location = new System.Drawing.Point(0, 425);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(293, 62);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Employees";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.employee_button.BackColor = System.Drawing.Color.Transparent;
+            this.employee_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.employee_button.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.employee_button.Location = new System.Drawing.Point(0, 425);
+            this.employee_button.Name = "employee_button";
+            this.employee_button.Size = new System.Drawing.Size(293, 62);
+            this.employee_button.TabIndex = 7;
+            this.employee_button.Text = "Employees";
+            this.employee_button.UseVisualStyleBackColor = false;
+            this.employee_button.Click += new System.EventHandler(this.employee_button_Click);
             // 
             // logout_button
             // 
@@ -184,7 +184,7 @@
             this.panel1.Controls.Add(this.welcome_label);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.product_button);
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.employee_button);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button5);
@@ -193,6 +193,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(293, 489);
             this.panel1.TabIndex = 10;
+            // 
+            // welcome_label
+            // 
+            this.welcome_label.AutoSize = true;
+            this.welcome_label.BackColor = System.Drawing.Color.Transparent;
+            this.welcome_label.Font = new System.Drawing.Font("Segoe UI Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcome_label.ForeColor = System.Drawing.Color.White;
+            this.welcome_label.Location = new System.Drawing.Point(3, 94);
+            this.welcome_label.Name = "welcome_label";
+            this.welcome_label.Size = new System.Drawing.Size(146, 37);
+            this.welcome_label.TabIndex = 13;
+            this.welcome_label.Text = "WELCOME ";
             // 
             // label3
             // 
@@ -215,18 +227,6 @@
             this.label4.Size = new System.Drawing.Size(170, 45);
             this.label4.TabIndex = 12;
             this.label4.Text = "BUSINESS";
-            // 
-            // welcome_label
-            // 
-            this.welcome_label.AutoSize = true;
-            this.welcome_label.BackColor = System.Drawing.Color.Transparent;
-            this.welcome_label.Font = new System.Drawing.Font("Segoe UI Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcome_label.ForeColor = System.Drawing.Color.White;
-            this.welcome_label.Location = new System.Drawing.Point(3, 94);
-            this.welcome_label.Name = "welcome_label";
-            this.welcome_label.Size = new System.Drawing.Size(146, 37);
-            this.welcome_label.TabIndex = 13;
-            this.welcome_label.Text = "WELCOME ";
             // 
             // main_menu
             // 
@@ -260,7 +260,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button employee_button;
         private System.Windows.Forms.Button logout_button;
         private System.Windows.Forms.Panel footer;
         private System.Windows.Forms.Panel panel1;

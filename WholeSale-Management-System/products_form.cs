@@ -14,33 +14,35 @@ namespace WholeSale_Management_System
     public partial class products_form : Form
     {
         SqlConnection con;
+        string empID;
 
         public products_form()
         {
             InitializeComponent();
         }
-        public products_form(SqlConnection conArg)
+        public products_form(string emp, SqlConnection conArg)
         {
             con = conArg;
+            empID = emp;
             InitializeComponent();
             populateProduct();
         }
 
         private void new_button_Click(object sender, EventArgs e)
         {
-            new new_product_form(con).Show();
+            new new_product_form(empID, con).Show();
             this.Close();
         }
 
         private void back_button_Click(object sender, EventArgs e)
         {
-            new main_menu().Show();
+            new main_menu(empID, con).Show();
             this.Close();
         }
 
         private void edit_button_Click(object sender, EventArgs e)
         {
-            new edit_product_form(con).Show();
+            new edit_product_form(empID, con).Show();
             this.Close();
         }
         private void populateProduct()

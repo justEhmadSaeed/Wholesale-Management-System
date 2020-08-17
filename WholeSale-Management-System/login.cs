@@ -61,7 +61,7 @@ namespace WholeSale_Management_System
                     new main_menu(eid, con).Show();
                     this.Hide();
                 }
-                else if (edesignation.ToLower() == "employee")
+                else
                 {
                     new main_menu(eid, con).Show();
                     this.Hide();

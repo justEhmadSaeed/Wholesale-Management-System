@@ -36,14 +36,15 @@ namespace WholeSale_Management_System
 
         private void product_button_Click(object sender, EventArgs e)
         {
-            new products_form(con).Show();
+            new products_form(empID, con).Show();
             this.Close();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void employee_button_Click(object sender, EventArgs e)
         {
-            new employees_form(con).Show();
+            new employees_form(empID, con).Show();
             this.Close();
         }
+
     }
 }

@@ -14,20 +14,22 @@ namespace WholeSale_Management_System
     public partial class add_employee_form : Form
     {
         SqlConnection con;
+        string empID;
 
         public add_employee_form()
         {
             InitializeComponent();
         }
 
-        public add_employee_form(SqlConnection conArg)
+        public add_employee_form(string emp, SqlConnection conArg)
         {
             con = conArg;
+            empID = emp;
             InitializeComponent();
         }
         private void back_button_Click(object sender, EventArgs e)
         {
-            new employees_form(con).Show();
+            new employees_form(empID, con).Show();
             this.Close();
         }
 

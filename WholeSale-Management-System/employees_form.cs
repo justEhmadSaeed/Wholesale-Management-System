@@ -14,40 +14,44 @@ namespace WholeSale_Management_System
     public partial class employees_form : Form
     {
         SqlConnection con;
+        string empID;
 
         public employees_form()
         {
             InitializeComponent();
         }
-        public employees_form(SqlConnection conArg)
+        public employees_form(string emp, SqlConnection conArg)
         {
-            InitializeComponent();
             con = conArg;
+            empID = emp;
+            InitializeComponent();
             populate_employee();
         }
         private void new_button_Click(object sender, EventArgs e)
         {
-            new add_employee_form(con).Show();
+            new add_employee_form(empID, con).Show();
             this.Close();
         }
 
         private void back_button_Click(object sender, EventArgs e)
         {
-            new main_menu().Show();
+            new main_menu(empID, con).Show();
             this.Close();
         }
 
         private void edit_button_Click(object sender, EventArgs e)
         {
-            new edit_employee_form(con).Show();
+            new edit_employee_form(empID, con).Show();
             this.Close();
         }
         private void populate_employee()
         {
             con.Open();
+
             SqlCommand cmd = new SqlCommand("select * from employee", con);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
+
             adapter.Fill(ds);
 
             employee_table.Rows.Clear();

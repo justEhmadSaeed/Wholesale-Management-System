@@ -13,7 +13,8 @@ namespace WholeSale_Management_System
 {
     public partial class edit_product_form : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=HAIER-PC;Initial Catalog=wholesale_MS;Integrated Security=True");
+        SqlConnection con;
+        string empID;
 
         public edit_product_form()
         {
@@ -21,16 +22,17 @@ namespace WholeSale_Management_System
             populateProduct();
         }
 
-        public edit_product_form(SqlConnection conArg)
+        public edit_product_form(string emp, SqlConnection conArg)
         {
             con = conArg;
+            empID = emp;
             InitializeComponent();
             populateProduct();
         }
 
         private void back_button_Click_1(object sender, EventArgs e)
         {
-            new products_form(con).Show();
+            new products_form(empID, con).Show();
             this.Close();
         }
         private void populateProduct()
