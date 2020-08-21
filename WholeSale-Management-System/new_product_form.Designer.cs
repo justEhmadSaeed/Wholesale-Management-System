@@ -217,6 +217,7 @@
             this.Controls.Add(this.label1);
             this.Name = "new_product_form";
             this.Text = "new_product_form";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

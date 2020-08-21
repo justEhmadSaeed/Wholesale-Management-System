@@ -317,6 +317,7 @@
             this.Controls.Add(this.label1);
             this.Name = "add_employee_form";
             this.Text = "new_employee_form";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
