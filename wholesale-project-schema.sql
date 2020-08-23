@@ -14,9 +14,10 @@ create table employee(
 	salary int,
 	employee_address varchar(100),
 	email varchar(50),
-	designation VARCHAR(20)
+	designation VARCHAR(10) not null
 );
-ALter table employee alter  column designation VARCHAR(20)  not null
 INSERT INTO product(product_ID, product_name, price, quantity, company_id) VALUES('pentene250ml', 'Pentene Shampoo 250ml', 300, 30, 'P&G' );
+INSERT INTO employee VALUES ('ehmad', 'Ehmad Saeed', '1234', '3630123456789', '03016672002', 50000, 'UET Lahore',
+'justehmadsaeed@gmail.com','admin');
 select * from product
 select * from employee

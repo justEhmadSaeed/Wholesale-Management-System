@@ -11,7 +11,7 @@ namespace WholeSale_Management_System
         public login()
         {
             InitializeComponent();
-            con = new SqlConnection("Data Source=EHMAD-PC;Initial Catalog=wholesale_MS;Integrated Security=True");
+            con = new SqlConnection("Data Source=EHMADSAEED;Initial Catalog=WholeSale_DB;Integrated Security=True");
         }
 
         private void userID_box_KeyUp(object sender, KeyEventArgs e)
