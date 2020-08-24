@@ -46,5 +46,9 @@ namespace WholeSale_Management_System
             this.Close();
         }
 
+        private void close_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
     }
 }

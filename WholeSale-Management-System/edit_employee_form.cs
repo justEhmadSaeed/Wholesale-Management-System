@@ -198,5 +198,6 @@ namespace WholeSale_Management_System
         {
             search_from_database();
         }
+
     }
 }

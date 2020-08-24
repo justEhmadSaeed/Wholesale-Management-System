@@ -45,8 +45,26 @@ namespace WholeSale_Management_System
             string email = email_box.Text;
             string designation = designation_box.Text;
 
+            // Input Handling 
+            if (id.Length == 0 || name.Length == 0 || password.Length == 0 || cnic.Length == 0 || designation.Length == 0 || contact.Length == 0)
+            {
+                MessageBox.Show("Complete all required fields.");
+                return;
+            }
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into employee values(@eid, @ename, @epass, @ecnic, @econtact, @esalary, @eaddress, @eemail, @edesignation)", con);
+            // Duplicate User ID Handling
+            SqlCommand cmd = new SqlCommand("Select * from employee WHERE employee_id = @id ", con);
+            cmd.Parameters.AddWithValue("@id", id);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                MessageBox.Show("Employee ID already Exists.");
+                con.Close();
+                return;
+            }
+            cmd = new SqlCommand("insert into employee values(@eid, @ename, @epass, @ecnic, @econtact, @esalary, @eaddress, @eemail, @edesignation)", con);
             cmd.Parameters.AddWithValue("@eid", id);
             cmd.Parameters.AddWithValue("@ename", name);
             cmd.Parameters.AddWithValue("@epass", password);
@@ -131,7 +149,7 @@ namespace WholeSale_Management_System
                 addemployee_into_database();
         }
 
-        
+
     }
 
 }

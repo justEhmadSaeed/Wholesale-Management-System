@@ -59,6 +59,7 @@
     <Compile Include="add_employee_form.Designer.cs">
       <DependentUpon>add_employee_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Button_WOC.cs" />
     <Compile Include="edit_employee_form.cs">
       <SubType>Form</SubType>
     </Compile>

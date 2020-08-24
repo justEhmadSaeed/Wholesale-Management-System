@@ -130,5 +130,11 @@ namespace WholeSale_Management_System
         {
             search_from_database();
         }
+
+        private void back_button_Click_1(object sender, EventArgs e)
+        {
+            new main_menu(empID, con).Show();
+            this.Close();
+        }
     }
 }

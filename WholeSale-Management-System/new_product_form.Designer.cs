@@ -61,9 +61,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(72, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 45);
+            this.label1.Size = new System.Drawing.Size(211, 45);
             this.label1.TabIndex = 3;
-            this.label1.Text = "PRODUCTS";
+            this.label1.Text = "Add Product";
             // 
             // name_box
             // 
@@ -216,7 +216,7 @@
             this.Controls.Add(this.id_box);
             this.Controls.Add(this.label1);
             this.Name = "new_product_form";
-            this.Text = "new_product_form";
+            this.Text = "Add Product";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
