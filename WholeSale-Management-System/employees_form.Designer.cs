@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.search_box = new System.Windows.Forms.TextBox();
             this.search_button = new System.Windows.Forms.Button();
@@ -62,9 +62,9 @@
             // search_box
             // 
             this.search_box.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_box.Location = new System.Drawing.Point(252, 155);
+            this.search_box.Location = new System.Drawing.Point(204, 153);
             this.search_box.Name = "search_box";
-            this.search_box.Size = new System.Drawing.Size(389, 29);
+            this.search_box.Size = new System.Drawing.Size(354, 29);
             this.search_box.TabIndex = 1;
             this.search_box.TextChanged += new System.EventHandler(this.search_box_TextChanged);
             // 
@@ -75,7 +75,7 @@
             this.search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.search_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_button.ForeColor = System.Drawing.Color.White;
-            this.search_button.Location = new System.Drawing.Point(647, 153);
+            this.search_button.Location = new System.Drawing.Point(564, 152);
             this.search_button.Name = "search_button";
             this.search_button.Size = new System.Drawing.Size(88, 31);
             this.search_button.TabIndex = 2;
@@ -90,7 +90,7 @@
             this.new_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.new_button.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.new_button.ForeColor = System.Drawing.Color.White;
-            this.new_button.Location = new System.Drawing.Point(869, 153);
+            this.new_button.Location = new System.Drawing.Point(917, 153);
             this.new_button.Name = "new_button";
             this.new_button.Size = new System.Drawing.Size(88, 31);
             this.new_button.TabIndex = 3;
@@ -103,14 +103,14 @@
             // 
             this.employee_table.AllowUserToAddRows = false;
             this.employee_table.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(19)))), ((int)(((byte)(44)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(19)))), ((int)(((byte)(44)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.employee_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(19)))), ((int)(((byte)(44)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.employee_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.employee_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.employee_table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.employeeID_Col,
@@ -122,9 +122,9 @@
             this.address_col,
             this.email_col,
             this.designation_col});
-            this.employee_table.Location = new System.Drawing.Point(252, 190);
+            this.employee_table.Location = new System.Drawing.Point(204, 190);
             this.employee_table.Name = "employee_table";
-            this.employee_table.Size = new System.Drawing.Size(847, 241);
+            this.employee_table.Size = new System.Drawing.Size(943, 386);
             this.employee_table.TabIndex = 5;
             // 
             // employeeID_Col
@@ -174,12 +174,12 @@
             // 
             // edit_button
             // 
-            this.edit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
+            this.edit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
             this.edit_button.FlatAppearance.BorderSize = 0;
             this.edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.edit_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edit_button.ForeColor = System.Drawing.Color.White;
-            this.edit_button.Location = new System.Drawing.Point(963, 153);
+            this.edit_button.Location = new System.Drawing.Point(1011, 153);
             this.edit_button.Name = "edit_button";
             this.edit_button.Size = new System.Drawing.Size(136, 31);
             this.edit_button.TabIndex = 4;
@@ -195,7 +195,7 @@
             this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back_button.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back_button.ForeColor = System.Drawing.Color.White;
-            this.back_button.Location = new System.Drawing.Point(979, 453);
+            this.back_button.Location = new System.Drawing.Point(1027, 598);
             this.back_button.Name = "back_button";
             this.back_button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
             this.back_button.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
@@ -212,7 +212,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(19)))), ((int)(((byte)(44)))));
-            this.ClientSize = new System.Drawing.Size(1350, 522);
+            this.ClientSize = new System.Drawing.Size(1350, 699);
             this.Controls.Add(this.back_button);
             this.Controls.Add(this.edit_button);
             this.Controls.Add(this.employee_table);

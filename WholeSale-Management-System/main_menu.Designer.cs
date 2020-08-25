@@ -52,7 +52,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Light", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
             this.label1.Location = new System.Drawing.Point(613, 144);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(421, 41);
@@ -74,9 +74,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(0, 133);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(293, 62);
@@ -87,9 +88,10 @@
             // product_button
             // 
             this.product_button.BackColor = System.Drawing.Color.Transparent;
+            this.product_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
             this.product_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.product_button.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.product_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.product_button.ForeColor = System.Drawing.Color.White;
             this.product_button.Location = new System.Drawing.Point(0, 191);
             this.product_button.Name = "product_button";
             this.product_button.Size = new System.Drawing.Size(293, 62);
@@ -101,9 +103,10 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(0, 246);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(293, 62);
@@ -114,9 +117,10 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Leelawadee UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(0, 303);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(293, 62);
@@ -127,9 +131,10 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(0, 364);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(293, 62);
@@ -140,9 +145,10 @@
             // employee_button
             // 
             this.employee_button.BackColor = System.Drawing.Color.Transparent;
+            this.employee_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
             this.employee_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.employee_button.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employee_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.employee_button.ForeColor = System.Drawing.Color.White;
             this.employee_button.Location = new System.Drawing.Point(0, 425);
             this.employee_button.Name = "employee_button";
             this.employee_button.Size = new System.Drawing.Size(293, 62);
@@ -155,10 +161,10 @@
             // 
             this.logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
             this.logout_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.logout_button.FlatAppearance.BorderSize = 2;
+            this.logout_button.FlatAppearance.BorderSize = 0;
             this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logout_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
+            this.logout_button.ForeColor = System.Drawing.Color.White;
             this.logout_button.Location = new System.Drawing.Point(1253, 0);
             this.logout_button.Name = "logout_button";
             this.logout_button.Size = new System.Drawing.Size(109, 36);
@@ -211,7 +217,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
             this.label3.Location = new System.Drawing.Point(698, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 45);
@@ -222,7 +228,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
             this.label4.Location = new System.Drawing.Point(770, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(170, 45);

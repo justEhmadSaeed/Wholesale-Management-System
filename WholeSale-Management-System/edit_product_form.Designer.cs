@@ -56,27 +56,31 @@
             // 
             // delete_button
             // 
+            this.delete_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
+            this.delete_button.FlatAppearance.BorderSize = 0;
+            this.delete_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete_button.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delete_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(19)))), ((int)(((byte)(44)))));
-            this.delete_button.Location = new System.Drawing.Point(340, 355);
+            this.delete_button.ForeColor = System.Drawing.Color.White;
+            this.delete_button.Location = new System.Drawing.Point(489, 361);
             this.delete_button.Name = "delete_button";
             this.delete_button.Size = new System.Drawing.Size(101, 35);
             this.delete_button.TabIndex = 27;
-            this.delete_button.Text = "DELETE";
-            this.delete_button.UseVisualStyleBackColor = true;
+            this.delete_button.Text = "Delete";
+            this.delete_button.UseVisualStyleBackColor = false;
             this.delete_button.Click += new System.EventHandler(this.delete_button_Click);
             // 
             // edit_button
             // 
-            this.edit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
+            this.edit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
+            this.edit_button.FlatAppearance.BorderSize = 0;
             this.edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.edit_button.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edit_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.edit_button.Location = new System.Drawing.Point(232, 355);
+            this.edit_button.ForeColor = System.Drawing.Color.White;
+            this.edit_button.Location = new System.Drawing.Point(381, 361);
             this.edit_button.Name = "edit_button";
             this.edit_button.Size = new System.Drawing.Size(101, 35);
             this.edit_button.TabIndex = 26;
-            this.edit_button.Text = "EDIT";
+            this.edit_button.Text = "Edit";
             this.edit_button.UseVisualStyleBackColor = false;
             this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
             // 
@@ -84,8 +88,8 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(106, 312);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(255, 324);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(123, 24);
             this.label6.TabIndex = 25;
@@ -94,19 +98,19 @@
             // 
             // companyid_box
             // 
-            this.companyid_box.Font = new System.Drawing.Font("Arial", 13F);
-            this.companyid_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.companyid_box.Location = new System.Drawing.Point(232, 310);
+            this.companyid_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.companyid_box.ForeColor = System.Drawing.Color.Black;
+            this.companyid_box.Location = new System.Drawing.Point(381, 322);
             this.companyid_box.Name = "companyid_box";
-            this.companyid_box.Size = new System.Drawing.Size(209, 27);
+            this.companyid_box.Size = new System.Drawing.Size(209, 29);
             this.companyid_box.TabIndex = 24;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(143, 277);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(292, 289);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 24);
             this.label5.TabIndex = 23;
@@ -117,8 +121,8 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(88, 242);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(237, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 24);
             this.label4.TabIndex = 22;
@@ -129,8 +133,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(86, 207);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(235, 219);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 24);
             this.label3.TabIndex = 21;
@@ -141,8 +145,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(122, 172);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(271, 184);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 24);
             this.label2.TabIndex = 20;
@@ -151,45 +155,45 @@
             // 
             // quantity_box
             // 
-            this.quantity_box.Font = new System.Drawing.Font("Arial", 13F);
-            this.quantity_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.quantity_box.Location = new System.Drawing.Point(232, 275);
+            this.quantity_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantity_box.ForeColor = System.Drawing.Color.Black;
+            this.quantity_box.Location = new System.Drawing.Point(381, 287);
             this.quantity_box.Name = "quantity_box";
-            this.quantity_box.Size = new System.Drawing.Size(209, 27);
+            this.quantity_box.Size = new System.Drawing.Size(209, 29);
             this.quantity_box.TabIndex = 19;
             // 
             // price_box
             // 
-            this.price_box.Font = new System.Drawing.Font("Arial", 13F);
-            this.price_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.price_box.Location = new System.Drawing.Point(232, 240);
+            this.price_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price_box.ForeColor = System.Drawing.Color.Black;
+            this.price_box.Location = new System.Drawing.Point(381, 252);
             this.price_box.Name = "price_box";
-            this.price_box.Size = new System.Drawing.Size(209, 27);
+            this.price_box.Size = new System.Drawing.Size(209, 29);
             this.price_box.TabIndex = 18;
             // 
             // name_box
             // 
-            this.name_box.Font = new System.Drawing.Font("Arial", 13F);
-            this.name_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.name_box.Location = new System.Drawing.Point(232, 205);
+            this.name_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_box.ForeColor = System.Drawing.Color.Black;
+            this.name_box.Location = new System.Drawing.Point(381, 217);
             this.name_box.Name = "name_box";
-            this.name_box.Size = new System.Drawing.Size(209, 27);
+            this.name_box.Size = new System.Drawing.Size(209, 29);
             this.name_box.TabIndex = 17;
             // 
             // id_box
             // 
-            this.id_box.Font = new System.Drawing.Font("Arial", 13F);
-            this.id_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.id_box.Location = new System.Drawing.Point(232, 170);
+            this.id_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_box.ForeColor = System.Drawing.Color.Black;
+            this.id_box.Location = new System.Drawing.Point(381, 182);
             this.id_box.Name = "id_box";
-            this.id_box.Size = new System.Drawing.Size(209, 27);
+            this.id_box.Size = new System.Drawing.Size(209, 29);
             this.id_box.TabIndex = 16;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
             this.label1.Location = new System.Drawing.Point(52, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(209, 35);
@@ -215,7 +219,7 @@
             this.quantity_col,
             this.price_col,
             this.companyid_col});
-            this.product_table.Location = new System.Drawing.Point(529, 170);
+            this.product_table.Location = new System.Drawing.Point(678, 182);
             this.product_table.Name = "product_table";
             this.product_table.Size = new System.Drawing.Size(437, 261);
             this.product_table.TabIndex = 31;
@@ -251,11 +255,12 @@
             // 
             // search_button
             // 
-            this.search_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
+            this.search_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(99)))), ((int)(((byte)(255)))));
+            this.search_button.FlatAppearance.BorderSize = 0;
             this.search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.search_button.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.search_button.Location = new System.Drawing.Point(866, 128);
+            this.search_button.ForeColor = System.Drawing.Color.White;
+            this.search_button.Location = new System.Drawing.Point(1027, 149);
             this.search_button.Name = "search_button";
             this.search_button.Size = new System.Drawing.Size(88, 27);
             this.search_button.TabIndex = 1;
@@ -265,18 +270,21 @@
             // 
             // search_box
             // 
-            this.search_box.Font = new System.Drawing.Font("Arial", 13F);
-            this.search_box.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.search_box.Location = new System.Drawing.Point(636, 128);
+            this.search_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_box.ForeColor = System.Drawing.Color.Black;
+            this.search_box.Location = new System.Drawing.Point(797, 149);
             this.search_box.Name = "search_box";
-            this.search_box.Size = new System.Drawing.Size(224, 27);
+            this.search_box.Size = new System.Drawing.Size(224, 29);
             this.search_box.TabIndex = 0;
             this.search_box.TextChanged += new System.EventHandler(this.search_box_TextChanged);
             // 
             // back_button
             // 
+            this.back_button.FlatAppearance.BorderSize = 2;
+            this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back_button.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back_button.Location = new System.Drawing.Point(232, 396);
+            this.back_button.ForeColor = System.Drawing.Color.Transparent;
+            this.back_button.Location = new System.Drawing.Point(381, 402);
             this.back_button.Name = "back_button";
             this.back_button.Size = new System.Drawing.Size(209, 35);
             this.back_button.TabIndex = 28;
@@ -289,7 +297,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(19)))), ((int)(((byte)(44)))));
-            this.ClientSize = new System.Drawing.Size(1023, 511);
+            this.ClientSize = new System.Drawing.Size(1350, 699);
             this.Controls.Add(this.back_button);
             this.Controls.Add(this.product_table);
             this.Controls.Add(this.search_button);

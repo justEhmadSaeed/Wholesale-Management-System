@@ -34,12 +34,6 @@ namespace WholeSale_Management_System
             this.Close();
         }
 
-        private void back_button_Click(object sender, EventArgs e)
-        {
-            new main_menu(empID, con).Show();
-            this.Close();
-        }
-
         private void edit_button_Click(object sender, EventArgs e)
         {
             new edit_product_form(empID, con).Show();
@@ -113,6 +107,12 @@ namespace WholeSale_Management_System
         private void search_box_TextChanged(object sender, EventArgs e)
         {
             search_from_database();
+        }
+
+        private void back_button_Click_1(object sender, EventArgs e)
+        {
+            new main_menu(empID, con).Show();
+            this.Close();
         }
     }
 }

@@ -72,6 +72,7 @@ namespace WholeSale_Management_System
             {
                 string errorMsg = "Incorrect User ID or Password!";
                 MessageBox.Show(errorMsg);
+                userID_box.Focus();
             }
 
             con.Close();

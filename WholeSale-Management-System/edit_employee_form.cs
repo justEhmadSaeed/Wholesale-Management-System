@@ -75,15 +75,15 @@ namespace WholeSale_Management_System
             int rowIndex = e.RowIndex;
             DataGridViewRow row = employee_table.Rows[rowIndex];
 
-            id_box.Text = Convert.ToString(row.Cells[0].Value);
-            name_box.Text = Convert.ToString(row.Cells[1].Value);
-            pass_box.Text = Convert.ToString(row.Cells[2].Value);
-            cnic_box.Text = Convert.ToString(row.Cells[3].Value);
-            contact_box.Text = Convert.ToString(row.Cells[4].Value);
-            salary_box.Text = Convert.ToString(row.Cells[5].Value);
-            address_box.Text = Convert.ToString(row.Cells[6].Value);
-            email_box.Text = Convert.ToString(row.Cells[7].Value);
-            designation_box.Text = Convert.ToString(row.Cells[8].Value);
+            id_box.Text = (row.Cells[0].Value).ToString();
+            name_box.Text = (row.Cells[1].Value).ToString();
+            pass_box.Text = (row.Cells[2].Value).ToString();
+            cnic_box.Text = (row.Cells[3].Value).ToString();
+            contact_box.Text = (row.Cells[4].Value).ToString();
+            salary_box.Text = (row.Cells[5].Value).ToString();
+            address_box.Text = (row.Cells[6].Value).ToString();
+            email_box.Text = (row.Cells[7].Value).ToString();
+            designation_box.Text = (row.Cells[8].Value).ToString();
         }
 
         private void edit_button_Click(object sender, EventArgs e)
@@ -117,7 +117,7 @@ namespace WholeSale_Management_System
                 string password = ds.Tables[0].Rows[i].ItemArray[2].ToString();
                 string cnic = ds.Tables[0].Rows[i].ItemArray[3].ToString();
                 string contact = ds.Tables[0].Rows[i].ItemArray[4].ToString();
-                string salary = ds.Tables[0].Rows[i].ItemArray[5].ToString();
+                int salary = int.Parse(ds.Tables[0].Rows[i].ItemArray[5].ToString());
                 string address = ds.Tables[0].Rows[i].ItemArray[6].ToString();
                 string email = ds.Tables[0].Rows[i].ItemArray[7].ToString();
                 string designation = ds.Tables[0].Rows[i].ItemArray[8].ToString();
@@ -155,7 +155,7 @@ namespace WholeSale_Management_System
             SqlCommand cmd = new SqlCommand("Update employee set employee_name = @ename, " +
                 "employee_pass = @epass, cnic = @ecnic, contact = @econtact, salary = @esalary," +
                 "employee_address = @eaddress, email = @eemail, designation = @edesignation" +
-                " WHERE employee_id = @pid", con);
+                " WHERE employee_id = @eid", con);
 
             cmd.Parameters.AddWithValue("@eid", id);
             cmd.Parameters.AddWithValue("@ename", name);
