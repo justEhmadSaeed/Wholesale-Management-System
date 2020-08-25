@@ -1,10 +1,3 @@
-create table product(
-	product_ID varchar(20) primary key,
-	product_name varchar(100) not null,
-	price int not null,
-	quantity int,
-	company_id varchar(20)
-);
 create table employee(
 	employee_id varchar(30) primary  key,
 	employee_name varchar(60) NOT NULL,
@@ -16,8 +9,24 @@ create table employee(
 	email varchar(50),
 	designation VARCHAR(10) not null
 );
-INSERT INTO product(product_ID, product_name, price, quantity, company_id) VALUES('pentene250ml', 'Pentene Shampoo 250ml', 300, 30, 'P&G' );
+create table companies(
+	company_id varchar(40) primary key,
+	supplier_name varchar(40),
+	contact varchar(13) not null,
+	email varchar(50)
+);
+create table product(
+	product_ID varchar(20) primary key,
+	product_name varchar(100) not null,
+	price int not null,
+	quantity int,
+	company_id varchar(40) foreign key references companies(company_id)
+);
 INSERT INTO employee VALUES ('ehmad', 'Ehmad Saeed', '1234', '3630123456789', '03016672002', 50000, 'UET Lahore',
 'justehmadsaeed@gmail.com','admin');
-select * from product
+INSERT INTO companies VALUES('P&G', 'Irfan', '03014545454', 'info@pandg.com');
+INSERT INTO product VALUES('pentene250ml', 'Pentene Shampoo 250ml', 300, 30, 'P&G' );
+
 select * from employee
+select * from companies
+select * from product
