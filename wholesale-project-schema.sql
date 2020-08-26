@@ -24,7 +24,7 @@ create table product(
 );
 INSERT INTO employee VALUES ('ehmad', 'Ehmad Saeed', '1234', '3630123456789', '03016672002', 50000, 'UET Lahore',
 'justehmadsaeed@gmail.com','admin');
-INSERT INTO companies VALUES('P&G', 'Irfan', '03014545454', 'info@pandg.com');
+INSERT INTO companies VALUES('Giggly', 'Kashaan', '03014545455', 'info@giggly.com');
 INSERT INTO product VALUES('pentene250ml', 'Pentene Shampoo 250ml', 300, 30, 'P&G' );
 
 select * from employee
