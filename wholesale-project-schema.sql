@@ -18,7 +18,7 @@ create table companies(
 create table product(
 	product_ID varchar(20) primary key,
 	product_name varchar(100) not null,
-	price int not null,
+	price float not null,
 	quantity int,
 	company_id varchar(40) foreign key references companies(company_id)
 );
@@ -26,7 +26,6 @@ INSERT INTO employee VALUES ('ehmad', 'Ehmad Saeed', '1234', '3630123456789', '0
 'justehmadsaeed@gmail.com','admin');
 INSERT INTO companies VALUES('Giggly', 'Kashaan', '03014545455', 'info@giggly.com');
 INSERT INTO product VALUES('pentene250ml', 'Pentene Shampoo 250ml', 300, 30, 'P&G' );
-
 select * from employee
 select * from companies
 select * from product
