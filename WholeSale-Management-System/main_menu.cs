@@ -46,9 +46,15 @@ namespace WholeSale_Management_System
             this.Close();
         }
 
+        private void companies_tab_Click(object sender, EventArgs e)
+        {
+            new company(empID, con).Show();
+            this.Close();
+        }
         private void close_button_Click(object sender, EventArgs e)
         {
             Application.Exit(); 
         }
+
     }
 }

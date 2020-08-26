@@ -46,8 +46,8 @@ namespace WholeSale_Management_System
             {
                 string id = ds.Tables[0].Rows[i].ItemArray[0].ToString();
                 string name = ds.Tables[0].Rows[i].ItemArray[1].ToString();
-                string quantity = ds.Tables[0].Rows[i].ItemArray[2].ToString();
-                string price = ds.Tables[0].Rows[i].ItemArray[3].ToString();
+                string price = ds.Tables[0].Rows[i].ItemArray[2].ToString();
+                string quantity = ds.Tables[0].Rows[i].ItemArray[3].ToString();
                 string company = ds.Tables[0].Rows[i].ItemArray[4].ToString();
 
                 DataGridViewRow row1 = new DataGridViewRow();

@@ -216,7 +216,7 @@
             // employee_table
             // 
             this.employee_table.AllowUserToAddRows = false;
-            this.employee_table.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(19)))), ((int)(((byte)(44)))));
+            this.employee_table.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.employee_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.employee_table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.employeeID_Col,
@@ -400,6 +400,7 @@
             // 
             // designation_box
             // 
+            this.designation_box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.designation_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.designation_box.ForeColor = System.Drawing.Color.Black;
             this.designation_box.FormattingEnabled = true;
@@ -415,7 +416,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(19)))), ((int)(((byte)(44)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(78)))));
             this.ClientSize = new System.Drawing.Size(1350, 699);
             this.Controls.Add(this.designation_box);
             this.Controls.Add(this.label10);

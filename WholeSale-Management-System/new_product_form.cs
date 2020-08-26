@@ -40,8 +40,27 @@ namespace WholeSale_Management_System
             string quantity = quantity_box.Text;
             string company_id = companyid_box.Text;
 
+            // Input Handling 
+            if (id.Length == 0 || name.Length == 0 || price.Length == 0 || quantity.Length == 0 || company_id.Length == 0)
+            {
+                MessageBox.Show("Complete all required fields.");
+                return;
+            }
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into product values(@pid, @pname, @pprice, @pquantity, @pcompany)", con);
+            // Duplicate User ID Handling
+            SqlCommand cmd = new SqlCommand("Select * from product WHERE product_id = @id ", con);
+            cmd.Parameters.AddWithValue("@id", id);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                MessageBox.Show("Product ID already Exists.");
+                con.Close();
+                return;
+            }
+            
+            cmd = new SqlCommand("insert into product values(@pid, @pname, @pprice, @pquantity, @pcompany)", con);
             cmd.Parameters.AddWithValue("@pid", id);
             cmd.Parameters.AddWithValue("@pname", name);
             cmd.Parameters.AddWithValue("@pprice", price);
@@ -49,6 +68,7 @@ namespace WholeSale_Management_System
             cmd.Parameters.AddWithValue("@pcompany", company_id);
 
             cmd.ExecuteNonQuery();
+            con.Close();
 
             MessageBox.Show("Product has been added successfully.");
             id_box.Text = "";
@@ -56,8 +76,7 @@ namespace WholeSale_Management_System
             price_box.Text = "";
             quantity_box.Text = "";
             companyid_box.Text = "";
-
-            con.Close();
+            id_box.Focus();
 
         }
 
@@ -95,6 +114,12 @@ namespace WholeSale_Management_System
                 addproduct_into_database();
         }
 
+        private void new_product_form_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'wholeSale_DBDataSet.companies' table. You can move, or remove it, as needed.
+            this.companiesTableAdapter.Fill(this.wholeSale_DBDataSet.companies);
+
+        }
     }
 
 }

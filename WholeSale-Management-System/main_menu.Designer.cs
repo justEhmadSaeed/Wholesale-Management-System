@@ -33,7 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.product_button = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.companies_tab = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.employee_button = new System.Windows.Forms.Button();
             this.logout_button = new System.Windows.Forms.Button();
@@ -74,13 +74,14 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(43)))), ((int)(((byte)(85)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(0, 133);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(293, 62);
+            this.button1.Size = new System.Drawing.Size(284, 52);
             this.button1.TabIndex = 2;
             this.button1.Text = "Order";
             this.button1.UseVisualStyleBackColor = false;
@@ -88,13 +89,14 @@
             // product_button
             // 
             this.product_button.BackColor = System.Drawing.Color.Transparent;
-            this.product_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
+            this.product_button.FlatAppearance.BorderSize = 0;
+            this.product_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(43)))), ((int)(((byte)(85)))));
             this.product_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.product_button.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.product_button.ForeColor = System.Drawing.Color.White;
-            this.product_button.Location = new System.Drawing.Point(0, 191);
+            this.product_button.Location = new System.Drawing.Point(0, 188);
             this.product_button.Name = "product_button";
-            this.product_button.Size = new System.Drawing.Size(293, 62);
+            this.product_button.Size = new System.Drawing.Size(284, 52);
             this.product_button.TabIndex = 3;
             this.product_button.Text = "Products";
             this.product_button.UseVisualStyleBackColor = false;
@@ -103,41 +105,45 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(43)))), ((int)(((byte)(85)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 246);
+            this.button3.Location = new System.Drawing.Point(0, 243);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(293, 62);
+            this.button3.Size = new System.Drawing.Size(284, 52);
             this.button3.TabIndex = 4;
             this.button3.Text = "Retailers";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // companies_tab
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Leelawadee UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 303);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(293, 62);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Companies";
-            this.button4.UseVisualStyleBackColor = false;
+            this.companies_tab.BackColor = System.Drawing.Color.Transparent;
+            this.companies_tab.FlatAppearance.BorderSize = 0;
+            this.companies_tab.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(43)))), ((int)(((byte)(85)))));
+            this.companies_tab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.companies_tab.Font = new System.Drawing.Font("Leelawadee UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.companies_tab.ForeColor = System.Drawing.Color.White;
+            this.companies_tab.Location = new System.Drawing.Point(0, 298);
+            this.companies_tab.Name = "companies_tab";
+            this.companies_tab.Size = new System.Drawing.Size(284, 52);
+            this.companies_tab.TabIndex = 5;
+            this.companies_tab.Text = "Companies";
+            this.companies_tab.UseVisualStyleBackColor = false;
+            this.companies_tab.Click += new System.EventHandler(this.companies_tab_Click);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(43)))), ((int)(((byte)(85)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 364);
+            this.button5.Location = new System.Drawing.Point(0, 353);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(293, 62);
+            this.button5.Size = new System.Drawing.Size(284, 52);
             this.button5.TabIndex = 6;
             this.button5.Text = "Payments";
             this.button5.UseVisualStyleBackColor = false;
@@ -145,13 +151,14 @@
             // employee_button
             // 
             this.employee_button.BackColor = System.Drawing.Color.Transparent;
-            this.employee_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(29)))), ((int)(((byte)(43)))));
+            this.employee_button.FlatAppearance.BorderSize = 0;
+            this.employee_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(43)))), ((int)(((byte)(85)))));
             this.employee_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.employee_button.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employee_button.ForeColor = System.Drawing.Color.White;
-            this.employee_button.Location = new System.Drawing.Point(0, 425);
+            this.employee_button.Location = new System.Drawing.Point(0, 408);
             this.employee_button.Name = "employee_button";
-            this.employee_button.Size = new System.Drawing.Size(293, 62);
+            this.employee_button.Size = new System.Drawing.Size(284, 52);
             this.employee_button.TabIndex = 7;
             this.employee_button.Text = "Employees";
             this.employee_button.UseVisualStyleBackColor = false;
@@ -159,7 +166,7 @@
             // 
             // logout_button
             // 
-            this.logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(12)))), ((int)(((byte)(36)))));
+            this.logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
             this.logout_button.Dock = System.Windows.Forms.DockStyle.Right;
             this.logout_button.FlatAppearance.BorderSize = 0;
             this.logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -175,7 +182,7 @@
             // 
             // footer
             // 
-            this.footer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
+            this.footer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(78)))));
             this.footer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.footer.Controls.Add(this.logout_button);
             this.footer.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -186,19 +193,18 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(44)))), ((int)(((byte)(65)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(78)))));
+            this.panel1.Controls.Add(this.employee_button);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.companies_tab);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.product_button);
             this.panel1.Controls.Add(this.welcome_label);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.product_button);
-            this.panel1.Controls.Add(this.employee_button);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(293, 489);
+            this.panel1.Size = new System.Drawing.Size(286, 489);
             this.panel1.TabIndex = 10;
             // 
             // welcome_label
@@ -206,7 +212,7 @@
             this.welcome_label.AutoSize = true;
             this.welcome_label.BackColor = System.Drawing.Color.Transparent;
             this.welcome_label.Font = new System.Drawing.Font("Segoe UI Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcome_label.ForeColor = System.Drawing.Color.White;
+            this.welcome_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
             this.welcome_label.Location = new System.Drawing.Point(3, 94);
             this.welcome_label.Name = "welcome_label";
             this.welcome_label.Size = new System.Drawing.Size(146, 37);
@@ -239,8 +245,8 @@
             // 
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.close_button.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.close_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
+            this.close_button.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.close_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(122)))), ((int)(((byte)(30)))));
             this.close_button.Location = new System.Drawing.Point(1323, -1);
             this.close_button.Name = "close_button";
             this.close_button.Size = new System.Drawing.Size(43, 42);
@@ -253,7 +259,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(19)))), ((int)(((byte)(44)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(43)))), ((int)(((byte)(85)))));
             this.ClientSize = new System.Drawing.Size(1366, 529);
             this.Controls.Add(this.close_button);
             this.Controls.Add(this.label4);
@@ -280,7 +286,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button product_button;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button companies_tab;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button employee_button;
         private System.Windows.Forms.Button logout_button;

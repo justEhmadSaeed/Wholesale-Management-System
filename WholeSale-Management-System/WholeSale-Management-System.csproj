@@ -60,6 +60,12 @@
       <DependentUpon>add_employee_form.cs</DependentUpon>
     </Compile>
     <Compile Include="Button_WOC.cs" />
+    <Compile Include="company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="company.Designer.cs">
+      <DependentUpon>company.cs</DependentUpon>
+    </Compile>
     <Compile Include="edit_employee_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     </Compile>
     <EmbeddedResource Include="add_employee_form.resx">
       <DependentUpon>add_employee_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="company.resx">
+      <DependentUpon>company.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="edit_employee_form.resx">
       <DependentUpon>edit_employee_form.cs</DependentUpon>

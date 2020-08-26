@@ -167,5 +167,12 @@ namespace WholeSale_Management_System
         {
             search_from_database();
         }
+
+        private void edit_product_form_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'wholeSale_DBDataSet.companies' table. You can move, or remove it, as needed.
+            this.companiesTableAdapter.Fill(this.wholeSale_DBDataSet.companies);
+
+        }
     }
 }
