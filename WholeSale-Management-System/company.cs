@@ -24,7 +24,7 @@ namespace WholeSale_Management_System
 
         private void new_button_Click(object sender, EventArgs e)
         {
-            new new_product_form(empID, con).Show();
+            new new_company_form(empID, con).Show();
             this.Close();
         }
 
