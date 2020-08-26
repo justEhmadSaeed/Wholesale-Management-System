@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.delete_button = new System.Windows.Forms.Button();
             this.edit_button = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -38,8 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.quantity_box = new System.Windows.Forms.TextBox();
-            this.price_box = new System.Windows.Forms.TextBox();
             this.name_box = new System.Windows.Forms.TextBox();
             this.id_box = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,9 +54,13 @@
             this.companiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.wholeSale_DBDataSet = new WholeSale_Management_System.WholeSale_DBDataSet();
             this.companiesTableAdapter = new WholeSale_Management_System.WholeSale_DBDataSetTableAdapters.companiesTableAdapter();
+            this.price_box = new System.Windows.Forms.NumericUpDown();
+            this.quantity_box = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.product_table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.companiesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wholeSale_DBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.price_box)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quantity_box)).BeginInit();
             this.SuspendLayout();
             // 
             // delete_button
@@ -151,24 +153,6 @@
             this.label2.Text = "Product ID";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // quantity_box
-            // 
-            this.quantity_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quantity_box.ForeColor = System.Drawing.Color.Black;
-            this.quantity_box.Location = new System.Drawing.Point(381, 287);
-            this.quantity_box.Name = "quantity_box";
-            this.quantity_box.Size = new System.Drawing.Size(209, 29);
-            this.quantity_box.TabIndex = 19;
-            // 
-            // price_box
-            // 
-            this.price_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.price_box.ForeColor = System.Drawing.Color.Black;
-            this.price_box.Location = new System.Drawing.Point(381, 252);
-            this.price_box.Name = "price_box";
-            this.price_box.Size = new System.Drawing.Size(209, 29);
-            this.price_box.TabIndex = 18;
-            // 
             // name_box
             // 
             this.name_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -202,14 +186,14 @@
             // 
             this.product_table.AllowUserToAddRows = false;
             this.product_table.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.product_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.product_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.product_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.product_table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductID_Col,
@@ -217,14 +201,14 @@
             this.quantity_col,
             this.price_col,
             this.companyid_col});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.product_table.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.product_table.DefaultCellStyle = dataGridViewCellStyle4;
             this.product_table.Location = new System.Drawing.Point(678, 182);
             this.product_table.Name = "product_table";
             this.product_table.Size = new System.Drawing.Size(504, 261);
@@ -326,12 +310,43 @@
             // 
             this.companiesTableAdapter.ClearBeforeFill = true;
             // 
+            // price_box
+            // 
+            this.price_box.DecimalPlaces = 2;
+            this.price_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price_box.ForeColor = System.Drawing.Color.Black;
+            this.price_box.Location = new System.Drawing.Point(381, 252);
+            this.price_box.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.price_box.Name = "price_box";
+            this.price_box.Size = new System.Drawing.Size(209, 29);
+            this.price_box.TabIndex = 18;
+            // 
+            // quantity_box
+            // 
+            this.quantity_box.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantity_box.ForeColor = System.Drawing.Color.Black;
+            this.quantity_box.Location = new System.Drawing.Point(381, 287);
+            this.quantity_box.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.quantity_box.Name = "quantity_box";
+            this.quantity_box.Size = new System.Drawing.Size(209, 29);
+            this.quantity_box.TabIndex = 19;
+            // 
             // edit_product_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(78)))));
             this.ClientSize = new System.Drawing.Size(1350, 699);
+            this.Controls.Add(this.quantity_box);
+            this.Controls.Add(this.price_box);
             this.Controls.Add(this.companyid_box);
             this.Controls.Add(this.back_button);
             this.Controls.Add(this.product_table);
@@ -345,8 +360,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.quantity_box);
-            this.Controls.Add(this.price_box);
             this.Controls.Add(this.name_box);
             this.Controls.Add(this.id_box);
             this.Name = "edit_product_form";
@@ -357,6 +370,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.product_table)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.companiesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wholeSale_DBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.price_box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quantity_box)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -371,8 +386,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox quantity_box;
-        private System.Windows.Forms.TextBox price_box;
         private System.Windows.Forms.TextBox name_box;
         private System.Windows.Forms.TextBox id_box;
         private System.Windows.Forms.Label label1;
@@ -389,5 +402,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn quantity_col;
         private System.Windows.Forms.DataGridViewTextBoxColumn price_col;
         private System.Windows.Forms.DataGridViewTextBoxColumn companyid_col;
+        private System.Windows.Forms.NumericUpDown price_box;
+        private System.Windows.Forms.NumericUpDown quantity_box;
     }
 }

@@ -30,12 +30,12 @@ namespace WholeSale_Management_System
         {
             string id = id_box.Text;
             string name = name_box.Text;
-            string price = price_box.Text;
-            string quantity = quantity_box.Text;
+            float price = float.Parse(price_box.Text);
+            int quantity = int.Parse(quantity_box.Text);
             string company_id = companyid_box.Text;
 
             // Input Handling 
-            if (id.Length == 0 || name.Length == 0 || price.Length == 0 || quantity.Length == 0 || company_id.Length == 0)
+            if (id.Length == 0 || name.Length == 0 || price == 0 || company_id.Length == 0)
             {
                 MessageBox.Show("Complete all required fields.");
                 return;
@@ -53,7 +53,7 @@ namespace WholeSale_Management_System
                 con.Close();
                 return;
             }
-            
+
             cmd = new SqlCommand("insert into product values(@pid, @pname, @pprice, @pquantity, @pcompany)", con);
             cmd.Parameters.AddWithValue("@pid", id);
             cmd.Parameters.AddWithValue("@pname", name);
@@ -91,21 +91,22 @@ namespace WholeSale_Management_System
                 price_box.Focus();
         }
 
-        private void price_box_KeyUp(object sender, KeyEventArgs e)
+        private void price_box_KeyUp_1(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
                 quantity_box.Focus();
         }
-
-        private void quantity_box_KeyUp(object sender, KeyEventArgs e)
+        private void quantity_box_KeyUp_1(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
                 companyid_box.Focus();
         }
-        private void companyid_box_KeyUp(object sender, KeyEventArgs e)
+    
+        private void companyid_box_KeyUp_1(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
                 addproduct_into_database();
+
         }
 
         private void new_product_form_Load(object sender, EventArgs e)
@@ -114,6 +115,7 @@ namespace WholeSale_Management_System
             this.companiesTableAdapter.Fill(this.wholeSale_DBDataSet.companies);
 
         }
+
     }
 
 }

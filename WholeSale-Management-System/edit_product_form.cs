@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WholeSale_Management_System
@@ -48,8 +42,8 @@ namespace WholeSale_Management_System
             {
                 string id = ds.Tables[0].Rows[i].ItemArray[0].ToString();
                 string name = ds.Tables[0].Rows[i].ItemArray[1].ToString();
-                string quantity = ds.Tables[0].Rows[i].ItemArray[2].ToString();
-                string price = ds.Tables[0].Rows[i].ItemArray[3].ToString();
+                string price = ds.Tables[0].Rows[i].ItemArray[2].ToString();
+                string quantity = ds.Tables[0].Rows[i].ItemArray[3].ToString();
                 string company = ds.Tables[0].Rows[i].ItemArray[4].ToString();
 
                 DataGridViewRow row1 = new DataGridViewRow();
@@ -72,8 +66,8 @@ namespace WholeSale_Management_System
 
             id_box.Text = Convert.ToString(row.Cells[0].Value);
             name_box.Text = Convert.ToString(row.Cells[1].Value);
-            price_box.Text = Convert.ToString(row.Cells[2].Value);
-            quantity_box.Text = Convert.ToString(row.Cells[3].Value);
+            quantity_box.Text = Convert.ToString(row.Cells[2].Value);
+            price_box.Text = Convert.ToString(row.Cells[3].Value);
             companyid_box.Text = Convert.ToString(row.Cells[4].Value);
         }
 
@@ -126,8 +120,8 @@ namespace WholeSale_Management_System
         {
             string id = id_box.Text;
             string name = name_box.Text;
-            string price = price_box.Text;
-            string quantity = quantity_box.Text;
+            float price = float.Parse(price_box.Text);
+            int quantity = int.Parse(quantity_box.Text);
             string company_id = companyid_box.Text;
 
             con.Open();

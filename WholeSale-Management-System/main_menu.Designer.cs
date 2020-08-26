@@ -80,7 +80,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 133);
+            this.button1.Location = new System.Drawing.Point(0, 143);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(284, 52);
             this.button1.TabIndex = 2;
@@ -96,7 +96,7 @@
             this.product_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.product_button.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.product_button.ForeColor = System.Drawing.Color.White;
-            this.product_button.Location = new System.Drawing.Point(0, 188);
+            this.product_button.Location = new System.Drawing.Point(0, 198);
             this.product_button.Name = "product_button";
             this.product_button.Size = new System.Drawing.Size(284, 52);
             this.product_button.TabIndex = 3;
@@ -113,7 +113,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 243);
+            this.button3.Location = new System.Drawing.Point(0, 253);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(284, 52);
             this.button3.TabIndex = 4;
@@ -129,7 +129,7 @@
             this.companies_tab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.companies_tab.Font = new System.Drawing.Font("Leelawadee UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.companies_tab.ForeColor = System.Drawing.Color.White;
-            this.companies_tab.Location = new System.Drawing.Point(0, 298);
+            this.companies_tab.Location = new System.Drawing.Point(0, 308);
             this.companies_tab.Name = "companies_tab";
             this.companies_tab.Size = new System.Drawing.Size(284, 52);
             this.companies_tab.TabIndex = 5;
@@ -146,7 +146,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 353);
+            this.button5.Location = new System.Drawing.Point(0, 363);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(284, 52);
             this.button5.TabIndex = 6;
@@ -162,7 +162,7 @@
             this.employee_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.employee_button.Font = new System.Drawing.Font("Leelawadee UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employee_button.ForeColor = System.Drawing.Color.White;
-            this.employee_button.Location = new System.Drawing.Point(0, 408);
+            this.employee_button.Location = new System.Drawing.Point(0, 418);
             this.employee_button.Name = "employee_button";
             this.employee_button.Size = new System.Drawing.Size(284, 52);
             this.employee_button.TabIndex = 7;
@@ -217,11 +217,11 @@
             // 
             this.welcome_label.AutoSize = true;
             this.welcome_label.BackColor = System.Drawing.Color.Transparent;
-            this.welcome_label.Font = new System.Drawing.Font("Segoe UI Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcome_label.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcome_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
-            this.welcome_label.Location = new System.Drawing.Point(3, 94);
+            this.welcome_label.Location = new System.Drawing.Point(3, 85);
             this.welcome_label.Name = "welcome_label";
-            this.welcome_label.Size = new System.Drawing.Size(146, 37);
+            this.welcome_label.Size = new System.Drawing.Size(152, 37);
             this.welcome_label.TabIndex = 13;
             this.welcome_label.Text = "WELCOME ";
             // 

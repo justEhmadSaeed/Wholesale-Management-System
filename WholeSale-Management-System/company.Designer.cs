@@ -35,12 +35,12 @@
             this.search_button = new System.Windows.Forms.Button();
             this.new_button = new System.Windows.Forms.Button();
             this.company_table = new System.Windows.Forms.DataGridView();
+            this.edit_button = new System.Windows.Forms.Button();
+            this.back_button = new ePOSOne.btnProduct.Button_WOC();
             this.company_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplier_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactno_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.edit_button = new System.Windows.Forms.Button();
-            this.back_button = new ePOSOne.btnProduct.Button_WOC();
             ((System.ComponentModel.ISupportInitialize)(this.company_table)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,30 +125,6 @@
             this.company_table.Size = new System.Drawing.Size(671, 437);
             this.company_table.TabIndex = 5;
             // 
-            // company_col
-            // 
-            this.company_col.HeaderText = "Company Name";
-            this.company_col.Name = "company_col";
-            this.company_col.Width = 200;
-            // 
-            // supplier_col
-            // 
-            this.supplier_col.HeaderText = "Supplier Name";
-            this.supplier_col.Name = "supplier_col";
-            this.supplier_col.Width = 160;
-            // 
-            // contactno_col
-            // 
-            this.contactno_col.HeaderText = "Contact No";
-            this.contactno_col.Name = "contactno_col";
-            this.contactno_col.Width = 120;
-            // 
-            // email_col
-            // 
-            this.email_col.HeaderText = "Email Address";
-            this.email_col.Name = "email_col";
-            this.email_col.Width = 150;
-            // 
             // edit_button
             // 
             this.edit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
@@ -184,6 +160,30 @@
             this.back_button.TextColor = System.Drawing.Color.White;
             this.back_button.UseVisualStyleBackColor = true;
             this.back_button.Click += new System.EventHandler(this.back_button_Click_1);
+            // 
+            // company_col
+            // 
+            this.company_col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.company_col.HeaderText = "Company Name";
+            this.company_col.Name = "company_col";
+            // 
+            // supplier_col
+            // 
+            this.supplier_col.HeaderText = "Supplier Name";
+            this.supplier_col.Name = "supplier_col";
+            this.supplier_col.Width = 160;
+            // 
+            // contactno_col
+            // 
+            this.contactno_col.HeaderText = "Contact No";
+            this.contactno_col.Name = "contactno_col";
+            this.contactno_col.Width = 120;
+            // 
+            // email_col
+            // 
+            this.email_col.HeaderText = "Email Address";
+            this.email_col.Name = "email_col";
+            this.email_col.Width = 150;
             // 
             // company
             // 

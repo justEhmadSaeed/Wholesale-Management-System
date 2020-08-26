@@ -30,7 +30,7 @@ namespace WholeSale_Management_System
 
         private void edit_button_Click(object sender, EventArgs e)
         {
-            new edit_product_form(empID, con).Show();
+            new edit_company(empID, con).Show();
             this.Close();
         }
         private void populateProduct()
