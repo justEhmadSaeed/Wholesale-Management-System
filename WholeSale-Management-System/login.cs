@@ -48,14 +48,14 @@ namespace WholeSale_Management_System
             cmd.Parameters.AddWithValue("@id", user);
             cmd.Parameters.AddWithValue("@pass", pass);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
+            DataTable ds = new DataTable();
             adapter.Fill(ds);
 
             string eid, edesignation;
-            if (ds.Tables[0].Rows.Count > 0)
+            if (ds.Rows.Count > 0)
             {
                 eid = user;
-                edesignation = (ds.Tables[0].Rows[0].ItemArray[8]).ToString();
+                edesignation = (ds.Rows[0].ItemArray[8]).ToString();
                 if (edesignation.ToLower() == "admin")
                 {
                     new main_menu(eid, con).Show();

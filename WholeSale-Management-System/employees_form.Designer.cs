@@ -35,8 +35,6 @@
             this.search_button = new System.Windows.Forms.Button();
             this.new_button = new System.Windows.Forms.Button();
             this.employee_table = new System.Windows.Forms.DataGridView();
-            this.edit_button = new System.Windows.Forms.Button();
-            this.back_button = new ePOSOne.btnProduct.Button_WOC();
             this.employeeID_Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employeename_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pass_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +44,8 @@
             this.address_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.designation_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.edit_button = new System.Windows.Forms.Button();
+            this.back_button = new ePOSOne.btnProduct.Button_WOC();
             ((System.ComponentModel.ISupportInitialize)(this.employee_table)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,7 +126,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(78)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -135,41 +135,6 @@
             this.employee_table.Name = "employee_table";
             this.employee_table.Size = new System.Drawing.Size(943, 386);
             this.employee_table.TabIndex = 5;
-            // 
-            // edit_button
-            // 
-            this.edit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
-            this.edit_button.FlatAppearance.BorderSize = 0;
-            this.edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.edit_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.edit_button.ForeColor = System.Drawing.Color.White;
-            this.edit_button.Location = new System.Drawing.Point(1011, 153);
-            this.edit_button.Name = "edit_button";
-            this.edit_button.Size = new System.Drawing.Size(136, 31);
-            this.edit_button.TabIndex = 4;
-            this.edit_button.Text = "Edit/ Delete";
-            this.edit_button.UseVisualStyleBackColor = false;
-            this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
-            // 
-            // back_button
-            // 
-            this.back_button.BorderColor = System.Drawing.Color.Silver;
-            this.back_button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(19)))), ((int)(((byte)(44)))));
-            this.back_button.FlatAppearance.BorderSize = 0;
-            this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.back_button.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back_button.ForeColor = System.Drawing.Color.White;
-            this.back_button.Location = new System.Drawing.Point(1027, 598);
-            this.back_button.Name = "back_button";
-            this.back_button.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.back_button.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            this.back_button.OnHoverTextColor = System.Drawing.Color.White;
-            this.back_button.Size = new System.Drawing.Size(120, 44);
-            this.back_button.TabIndex = 7;
-            this.back_button.Text = "Back";
-            this.back_button.TextColor = System.Drawing.Color.White;
-            this.back_button.UseVisualStyleBackColor = true;
-            this.back_button.Click += new System.EventHandler(this.back_button_Click_1);
             // 
             // employeeID_Col
             // 
@@ -217,6 +182,43 @@
             this.designation_col.HeaderText = "Designation";
             this.designation_col.Name = "designation_col";
             // 
+            // edit_button
+            // 
+            this.edit_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(60)))), ((int)(((byte)(69)))));
+            this.edit_button.FlatAppearance.BorderSize = 0;
+            this.edit_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.edit_button.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edit_button.ForeColor = System.Drawing.Color.White;
+            this.edit_button.Location = new System.Drawing.Point(1011, 153);
+            this.edit_button.Name = "edit_button";
+            this.edit_button.Size = new System.Drawing.Size(136, 31);
+            this.edit_button.TabIndex = 4;
+            this.edit_button.Text = "Edit/ Delete";
+            this.edit_button.UseVisualStyleBackColor = false;
+            this.edit_button.Click += new System.EventHandler(this.edit_button_Click);
+            // 
+            // back_button
+            // 
+            this.back_button.BorderColor = System.Drawing.Color.White;
+            this.back_button.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(78)))));
+            this.back_button.FlatAppearance.BorderSize = 0;
+            this.back_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.back_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(43)))), ((int)(((byte)(85)))));
+            this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back_button.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_button.ForeColor = System.Drawing.Color.White;
+            this.back_button.Location = new System.Drawing.Point(1027, 598);
+            this.back_button.Name = "back_button";
+            this.back_button.OnHoverBorderColor = System.Drawing.Color.White;
+            this.back_button.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(43)))), ((int)(((byte)(85)))));
+            this.back_button.OnHoverTextColor = System.Drawing.Color.White;
+            this.back_button.Size = new System.Drawing.Size(120, 44);
+            this.back_button.TabIndex = 7;
+            this.back_button.Text = "Back";
+            this.back_button.TextColor = System.Drawing.Color.White;
+            this.back_button.UseVisualStyleBackColor = true;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click_1);
+            // 
             // employees_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,7 +232,7 @@
             this.Controls.Add(this.search_button);
             this.Controls.Add(this.search_box);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "employees_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Users";

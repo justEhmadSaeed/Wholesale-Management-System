@@ -22,11 +22,11 @@ namespace WholeSale_Management_System
         }
         private void back_button_Click(object sender, EventArgs e)
         {
-            new products_form(empID, con).Show();
+            new company(empID, con).Show();
             this.Close();
         }
 
-        private void addproduct_into_database()
+        private void addcompany_into_database()
         {
             string id = id_box.Text;
             string supplier = supplier_box.Text;
@@ -34,7 +34,7 @@ namespace WholeSale_Management_System
             string email = email_box.Text;
 
             // Input Handling 
-            if (id.Length == 0 || supplier.Length == 0 || contact.Length == 0 || email.Length == 0)
+            if (id.Length == 0 || contact.Length == 0)
             {
                 MessageBox.Show("Complete all required fields.");
                 return;
@@ -73,7 +73,7 @@ namespace WholeSale_Management_System
 
         private void add_button_Click(object sender, EventArgs e)
         {
-            addproduct_into_database();
+            addcompany_into_database();
         }
 
         private void id_box_KeyUp(object sender, KeyEventArgs e)
@@ -100,7 +100,7 @@ namespace WholeSale_Management_System
         {
 
             if (e.KeyCode == Keys.Enter)
-                addproduct_into_database();
+                addcompany_into_database();
         }
 
 

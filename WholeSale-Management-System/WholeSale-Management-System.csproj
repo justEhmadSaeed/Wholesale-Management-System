@@ -66,6 +66,12 @@
     <Compile Include="company.Designer.cs">
       <DependentUpon>company.cs</DependentUpon>
     </Compile>
+    <Compile Include="edit_company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_company.Designer.cs">
+      <DependentUpon>edit_company.cs</DependentUpon>
+    </Compile>
     <Compile Include="edit_employee_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="main_menu.Designer.cs">
       <DependentUpon>main_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="new_company_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new_company_form.Designer.cs">
+      <DependentUpon>new_company_form.cs</DependentUpon>
     </Compile>
     <Compile Include="new_product_form.cs">
       <SubType>Form</SubType>
@@ -145,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="main_menu.resx">
       <DependentUpon>main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new_company_form.resx">
+      <DependentUpon>new_company_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="new_product_form.resx">
       <DependentUpon>new_product_form.cs</DependentUpon>

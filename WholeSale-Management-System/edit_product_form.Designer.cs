@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.delete_button = new System.Windows.Forms.Button();
             this.edit_button = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,21 +44,21 @@
             this.id_box = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.product_table = new System.Windows.Forms.DataGridView();
-            this.search_button = new System.Windows.Forms.Button();
-            this.search_box = new System.Windows.Forms.TextBox();
-            this.back_button = new System.Windows.Forms.Button();
-            this.companyid_box = new System.Windows.Forms.ComboBox();
-            this.wholeSale_DBDataSet = new WholeSale_Management_System.WholeSale_DBDataSet();
-            this.companiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.companiesTableAdapter = new WholeSale_Management_System.WholeSale_DBDataSetTableAdapters.companiesTableAdapter();
             this.ProductID_Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productname_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantity_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.companyid_col = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.search_button = new System.Windows.Forms.Button();
+            this.search_box = new System.Windows.Forms.TextBox();
+            this.back_button = new System.Windows.Forms.Button();
+            this.companyid_box = new System.Windows.Forms.ComboBox();
+            this.companiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.wholeSale_DBDataSet = new WholeSale_Management_System.WholeSale_DBDataSet();
+            this.companiesTableAdapter = new WholeSale_Management_System.WholeSale_DBDataSetTableAdapters.companiesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.product_table)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wholeSale_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.companiesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wholeSale_DBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // delete_button
@@ -201,14 +202,14 @@
             // 
             this.product_table.AllowUserToAddRows = false;
             this.product_table.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(69)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.product_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.product_table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.product_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.product_table.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductID_Col,
@@ -216,11 +217,49 @@
             this.quantity_col,
             this.price_col,
             this.companyid_col});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.product_table.DefaultCellStyle = dataGridViewCellStyle2;
             this.product_table.Location = new System.Drawing.Point(678, 182);
             this.product_table.Name = "product_table";
             this.product_table.Size = new System.Drawing.Size(504, 261);
             this.product_table.TabIndex = 31;
             this.product_table.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.product_table_CellEnter);
+            // 
+            // ProductID_Col
+            // 
+            this.ProductID_Col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ProductID_Col.HeaderText = "Product ID";
+            this.ProductID_Col.Name = "ProductID_Col";
+            // 
+            // productname_col
+            // 
+            this.productname_col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.productname_col.HeaderText = "Product Name";
+            this.productname_col.Name = "productname_col";
+            // 
+            // quantity_col
+            // 
+            this.quantity_col.HeaderText = "Quantity";
+            this.quantity_col.Name = "quantity_col";
+            this.quantity_col.Width = 70;
+            // 
+            // price_col
+            // 
+            this.price_col.HeaderText = "Price/-";
+            this.price_col.Name = "price_col";
+            this.price_col.Width = 60;
+            // 
+            // companyid_col
+            // 
+            this.companyid_col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.companyid_col.HeaderText = "Company ID";
+            this.companyid_col.Name = "companyid_col";
             // 
             // search_button
             // 
@@ -273,49 +312,19 @@
             this.companyid_box.Size = new System.Drawing.Size(209, 29);
             this.companyid_box.TabIndex = 24;
             // 
-            // wholeSale_DBDataSet
-            // 
-            this.wholeSale_DBDataSet.DataSetName = "WholeSale_DBDataSet";
-            this.wholeSale_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // companiesBindingSource
             // 
             this.companiesBindingSource.DataMember = "companies";
             this.companiesBindingSource.DataSource = this.wholeSale_DBDataSet;
             // 
+            // wholeSale_DBDataSet
+            // 
+            this.wholeSale_DBDataSet.DataSetName = "WholeSale_DBDataSet";
+            this.wholeSale_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // companiesTableAdapter
             // 
             this.companiesTableAdapter.ClearBeforeFill = true;
-            // 
-            // ProductID_Col
-            // 
-            this.ProductID_Col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ProductID_Col.HeaderText = "Product ID";
-            this.ProductID_Col.Name = "ProductID_Col";
-            // 
-            // productname_col
-            // 
-            this.productname_col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.productname_col.HeaderText = "Product Name";
-            this.productname_col.Name = "productname_col";
-            // 
-            // quantity_col
-            // 
-            this.quantity_col.HeaderText = "Quantity";
-            this.quantity_col.Name = "quantity_col";
-            this.quantity_col.Width = 70;
-            // 
-            // price_col
-            // 
-            this.price_col.HeaderText = "Price/-";
-            this.price_col.Name = "price_col";
-            this.price_col.Width = 60;
-            // 
-            // companyid_col
-            // 
-            this.companyid_col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.companyid_col.HeaderText = "Company ID";
-            this.companyid_col.Name = "companyid_col";
             // 
             // edit_product_form
             // 
@@ -346,8 +355,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.edit_product_form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.product_table)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wholeSale_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.companiesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wholeSale_DBDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
