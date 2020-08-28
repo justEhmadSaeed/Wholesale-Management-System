@@ -56,5 +56,10 @@ namespace WholeSale_Management_System
             Application.Exit(); 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new order_form(empID, con).Show();
+            this.Close();
+        }
     }
 }
